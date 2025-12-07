@@ -7,3 +7,6 @@
 
 # tsx cache
 .cache
+
+# Environment Variables
+.env
