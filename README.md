@@ -13,7 +13,7 @@ A minimal TypeScript project set up to explore and test Drizzle ORM features usi
 
 1.  **Clone the repository:**
     ```bash
-    git clone [https://github.com/AlbertSigsbert/Drizzle-Playground.git]
+    git clone https://github.com/AlbertSigsbert/Drizzle-Playground.git
     cd drizzle-playground
     ```
 2.  **Install dependencies:**
