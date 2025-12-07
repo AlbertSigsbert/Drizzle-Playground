@@ -3,9 +3,11 @@
   "version": "1.0.0",
   "description": "A minimal project to explore Drizzle ORM",
   "main": "src/main.ts",
+  "type": "module",
   "scripts": {
     "dev": "tsx src/main.ts",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "db:generate": "drizzle-kit generate",
+    "db:migrate":"tsx src/drizzle/migrate.ts"
   },
   "keywords": [],
   "author": "",

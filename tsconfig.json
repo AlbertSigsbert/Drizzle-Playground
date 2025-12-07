@@ -1,42 +1,16 @@
 {
   "compilerOptions": {
     "rootDir": "src",
-    "outDir": "dist",
-
-    // Environment Settings
-    "module": "commonjs",
     "target": "esnext",
-    "types": [],
-    "lib": ["es2022"],
-
-    // Other Outputs
-    "sourceMap": true,
-    "declaration": true,
-    "declarationMap": true,
-
-    // Stricter Typechecking Options
-    "noUncheckedIndexedAccess": true,
-    "exactOptionalPropertyTypes": true,
-
-    // Style Options
-    // "noImplicitReturns": true,
-    // "noImplicitOverride": true,
-    // "noUnusedLocals": true,
-    // "noUnusedParameters": true,
-    // "noFallthroughCasesInSwitch": true,
-    // "noPropertyAccessFromIndexSignature": true,
-
-    // Recommended Options
+    "module": "esnext",               // just standard ES modules
+    "moduleResolution": "node",       // simple node resolution
     "strict": true,
-    "jsx": "react-jsx",
-    "verbatimModuleSyntax": true,
-    "isolatedModules": true,
-    "noUncheckedSideEffectImports": true,
-    "moduleDetection": "force",
-    "skipLibCheck": true,
-
     "esModuleInterop": true,
-    "resolveJsonModule": true
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "isolatedModules": true,
+    "declaration": false,             // no builds, so no need
+    "sourceMap": true
   },
-  "exclude": ["drizzle.config.ts"]
+  "include": ["src/**/*"]
 }
